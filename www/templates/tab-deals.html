@@ -1,0 +1,31 @@
+<ion-view view-title="Happy Hours">
+<!--   <ion-nav-buttons side="right">
+    <button class="button button-clear"><i class="icon ion-android-more-vertical"></i></button>
+  </ion-nav-buttons> -->
+  <ion-content class="padding">
+
+<div class="list card">
+
+  <!-- TODO: icon these -->
+  <div class="item item-avatar">
+    <h2>{{title}}</h2>
+    <p>{{discount}}</p>
+  </div>
+
+  <div class="item item-body">
+    <img class="full-image" ng-src="{{logo}}.jpg">
+    <p>
+     {{time}}m left
+    </p>
+     <p>
+      {{distance}}mi away
+    </p>
+    <p>
+    <!-- make these special and pretty -->
+      <a href="#" class="subdued">Call</a>
+      <a href="#" class="subdued">Navigate</a>
+    </p>
+  </div>
+
+  </ion-content>
+</ion-view>
