@@ -27,24 +27,19 @@ angular.module('app', ['ionic', 'ngMaterial', 'starter.controllers', 'starter.se
 
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $mdThemingProvider) {
 
-    // Ionic uses AngularUI Router which uses the concept of states
-    // Learn more here: https://github.com/angular-ui/ui-router
-    // Set up the various states which the app can be in.
-    // Each state's controller can be found in controllers.js
+    $mdThemingProvider.theme('default')
+    .primaryColor('amber')
+    .accentPalette('red')
+    .warnPalette('red')
     $stateProvider
-
-    // setup an abstract state for the tabs directive
         .state('tab', {
         url: '/tab',
         abstract: true,
         templateUrl: 'templates/tabs.html',
         controller: 'tabctrl'
     })
-
-    // Each tab has its own nav history stack:
-
     .state('tab.deals', {
         url: '/deals',
         views: {
@@ -54,20 +49,19 @@ angular.module('app', ['ionic', 'ngMaterial', 'starter.controllers', 'starter.se
             }
         }
     })
-
-    .state('tab.trs', {
-            url: '/trs',
+    .state('tab.tastingrooms', {
+            url: '/tastingrooms',
             views: {
-                'tab-trs': {
-                    templateUrl: 'templates/tab-trs.html',
-                    controller: 'trsctrl'
+                'tab-tastingrooms': {
+                    templateUrl: 'templates/tab-tastingrooms.html',
+                    controller: 'tastingroomsctrl'
                 }
             }
         })
         .state('tab.tr-detail', {
-            url: '/trs/:trId',
+            url: '/tastingrooms/:trId',
             views: {
-                'tab-trs': {
+                'tab-tastingrooms': {
                     templateUrl: 'templates/tr-detail.html',
                     controller: 'trdetailctrl'
                 }

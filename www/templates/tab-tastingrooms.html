@@ -1,0 +1,9 @@
+<md-content>
+      <md-card ng-repeat="trm in tastingrooms" type="item-text-wrap" href="#/tab/trs/{{tastingrm.id}}">
+        <img ng-src="{{tastingrm.face}}">
+        <md-card-content>
+          <h2>{{tastingrm.name}}</h2>
+          <p>{{tastingrm.lastText}}</p>
+        </md-card-content>
+      </md-card>
+</md-content>

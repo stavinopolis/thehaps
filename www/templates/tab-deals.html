@@ -1,31 +1,52 @@
-<ion-view view-title="Happy Hours">
-<!--   <ion-nav-buttons side="right">
-    <button class="button button-clear"><i class="icon ion-android-more-vertical"></i></button>
-  </ion-nav-buttons> -->
-  <ion-content class="padding">
+<md-content>
+<div class="md-card">
 
-<div class="list card">
-
-  <!-- TODO: icon these -->
-  <div class="item item-avatar">
-    <h2>{{title}}</h2>
-    <p>{{discount}}</p>
-  </div>
-
-  <div class="item item-body">
-    <img class="full-image" ng-src="{{logo}}.jpg">
-    <p>
+  <md-card>
+ <img src="img/sample.png" md-media-sm />
+ <md-card-content>
+    <h2></h2>
+    <p></p>
+ </md-card-content>
+     <p>
      {{time}}m left
     </p>
      <p>
       {{distance}}mi away
     </p>
+ <md-card-footer>
     <p>
     <!-- make these special and pretty -->
       <a href="#" class="subdued">Call</a>
       <a href="#" class="subdued">Navigate</a>
     </p>
-  </div>
+ </md-card-footer>
+</md-card>
 
-  </ion-content>
-</ion-view>
+      <md-card>
+        <md-card-title>
+                    <md-card-title-media>
+            <div class="md-media-md card-mediaa"></div>
+          </md-card-title-media>
+          <md-card-title-text class="padme">
+            <span class="md-headline">{{discount}}</span>
+            <span class="md-subhead">{{location}}</span>
+            <span class="md-subhead">
+              <i class="material-icons md-18">star</i>
+              <i class="material-icons md-18">star</i>
+              <i class="material-icons md-18">star</i>
+              <i class="material-icons md-18">star</i>
+              <i class="material-icons md-18">star</i>
+            </span>
+          </md-card-title-text>
+
+        </md-card-title>
+        <md-card-actions layout="row">
+          <div  layout-align="end ">
+            <md-button>Action 1</md-button>
+            <md-button>Action 2</md-button>
+          </div>
+
+        </md-card-actions>
+      </md-card>
+
+</md-content>
